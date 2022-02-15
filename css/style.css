@@ -321,6 +321,7 @@ section.qualities div.qualitie-list{
     width: 100%;
     position: relative;
 }
+<<<<<<< HEAD
 
 /* Kira's Image */
 div.qualitie-list img{
@@ -348,10 +349,34 @@ div.qualitie-list div.list i{
     float: left;
     color: #7470b8;
 }
+=======
+>>>>>>> 58c0a808c11e86c53a4e11bfb71b570f8acc4c1f
 
+/* Kira's Image */
+div.qualitie-list img{
+    float: left;
+}
 
+/* List */
+div.qualitie-list div.list{
+    height: 97px;
+    margin-top: 24px;
+}
 
+/* List paragraph */
+div.qualitie-list div.list p{
+    padding-top: 26px;
+    font-weight: bolder;
+    font-size: 42px;
+    color: #602f64;
+    margin-left: 578px;
+}
 
+/* List Icons */
+div.qualitie-list div.list i{
+    float: left;
+    color: #7470b8;
+}
 
 
 
