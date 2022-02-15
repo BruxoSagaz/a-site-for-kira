@@ -331,6 +331,7 @@ div.qualitie-list img{
 div.qualitie-list div.list{
     height: 97px;
     margin-top: 24px;
+    margin-left: 43px;
 }
 
 /* List paragraph */
@@ -347,6 +348,10 @@ div.qualitie-list div.list i{
     float: left;
     color: #7470b8;
 }
+
+
+
+
 
 
 
@@ -373,10 +378,26 @@ div.qualitie-list div.list i{
     div.img-box p{
         font-size: 18px;
         margin-top: 10px;
+        padding-top: 115%;
     }
+
+    div.img-box{
+        height: 100%;
+    }
+
 
     div.txt-box p{
         font-size: 14px;
+    }
+
+    div.qualitie-list div.list{
+        float: left;
+        margin-left: 0px;
+        text-align: left;
+    }
+
+    div.qualitie-list div.list p{
+        margin-left: 174px;
     }
 }
 
