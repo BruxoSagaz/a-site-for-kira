@@ -309,11 +309,44 @@ div.send-box{
 
 /* Section 04*/
 
+/*Section*/
+section.qualities{
+    width: 100%;
+    height: 744px;
+}
 
+/*Div list*/
+section.qualities div.qualitie-list{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+}
 
+/* Kira's Image */
+div.qualitie-list img{
+    float: left;
+}
 
+/* List */
+div.qualitie-list div.list{
+    height: 97px;
+    margin-top: 24px;
+}
 
+/* List paragraph */
+div.qualitie-list div.list p{
+    padding-top: 26px;
+    font-weight: bolder;
+    font-size: 42px;
+    color: #602f64;
+    margin-left: 578px;
+}
 
+/* List Icons */
+div.qualitie-list div.list i{
+    float: left;
+    color: #7470b8;
+}
 
 
 
