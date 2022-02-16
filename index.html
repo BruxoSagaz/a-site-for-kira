@@ -21,11 +21,11 @@
                 <!-- List -->
                 <ul>
                     <li class="selected">
-                        <a href="">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
 
                     <li>
-                        <a href="">About</a>
+                        <a href="about.html">About</a>
                     </li>
 
                     <li>
@@ -33,6 +33,25 @@
                     </li>
                 </ul><!--List-->
             </nav><!--Desktop_menu-->
+
+            <!-- Menu Mobile -->
+            <nav class="menu-mobile">
+                <h2><i class="fa fa-bars"></i></h2>
+                <!-- List -->
+                <ul>
+                    <li class="selected">
+                        <a href="index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+
+                    <li>
+                        <a href="">Contact</a>
+                    </li>
+                </ul><!--List-->
+            </nav><!-- Menu Mobile -->
             <div class="clear"></div> <!-- Clear -->
         </div><!--Container-->
    </header><!-- Header -->
@@ -83,7 +102,7 @@
 
             </div><!-- icone powers -->
         </div><!-- container -->
-   </section><!-- Powes -->
+   </section><!-- Section 02 -->
 
 <!-- Section 03 -->
 
@@ -113,7 +132,7 @@
         </div><!-- Box Depoiment -->
         <div class="clear"></div><!-- Clear -->
     </div><!-- Container -->
-   </section> <!-- Depoiment Box -->
+   </section> 
 
    <!-- Image Sender -->
    <div class="img-bg">
@@ -128,8 +147,10 @@
             </div>
         </div>
         <div class="clear"></div>
-   </div>
-   
+   </div><!-- Image Sender -->
+   <!-- Section 03 -->
+
+
 <!-- Section 04 -->
    <section class="qualities">
        <!-- Container -->
@@ -172,16 +193,80 @@
             <div class="line-text" style="width: 100%;padding-top: 17px;">
                 <div style="width: 50px;background-color: #7470b8;width: 100%;"></div>
             </div><!-- Endline -->
+            <div class="clear"></div>
        </div><!-- Container -->
    </section><!-- Section 04 -->
 
    <!-- Section 05 -->
 
-   <section class="end">
+   <section class="deeds" style="background-color: #e2e1fa;">
+        <!-- Container -->
+        <div class="container">
 
-   </section>
+            <!-- text -->
+            <div class="line-text" style="margin-top: 10px;width: 100%; padding-bottom: 8px;">
+                <h2 style="font-size: 49px;">Greatest Deeds:</h2>
+            </div><!-- Text -->
+
+            <div class="card-single">
+                <img src="images/jojo_logo.png" alt="Jojo Logo" title="Jojo logo">
+                <h3>Greatest Deeds</h3>
+                <p>texttexttexttexttexttexttetxtxtxcetxte</p>
+            </div>
+
+            <div class="card-single">
+                <img src="images/jojo_logo.png" alt="Jojo Logo" title="Jojo logo">
+                <h3>Greatest Deeds</h3>
+                <p>texttexttexttexttexttexttetxtxtxcetxte</p>
+            </div>
+
+            <div class="card-single">
+                <img src="images/jojo_logo.png" alt="Jojo Logo" title="Jojo logo">
+                <h3>Greatest Deeds</h3>
+                <p>texttexttexttexttexttexttetxtxtxcetxte</p>
+            </div>
+
+            <div class="clear"></div><!-- Clear -->
+        </div><!-- Container -->
+   </section><!-- Section 05 -->
+
+   <!-- Section 06 -->
+   <footer class="footer1">
+        <div class="container">
+
+            <div class="w50">
+                <h2>Find Me</h2>
+                <p><i class="fa-solid fa-location-pin"></i> Purple St. , 50 , Morioh - Japan </p>
+                <p><i class="fa-solid fa-at"></i> batozadosto@gmail.com </p>
+                <p><i class="fa-solid fa-mobile"></i> (+81) 3604-3666 </p>
+            </div>
 
 
+            <div class="w50" style="text-align: right;">
+                <h2>Links Úteis</h2>
+                <a href="https://br.pinterest.com/search/pins/?rs=ac&len=2&q=cats&eq=cats&etslf=13691&term_meta[]=cats%7Cautocomplete%7C0">Cats</a>
+                <a href="https://www.youtube.com/watch?v=fJ9rUzIMcZQ&list=PLZYzh1QhBgMark6rrridAXQbozFrlxc12">Music</a>
+                <a href="https://br.pinterest.com/search/pins/?q=woman%20hand&rs=typed&term_meta[]=woman%7Ctyped&term_meta[]=hand%7Ctyped">Women Hands </a>
+            </div>
 
+        </div> <!-- Container -->
+        <div class="clear"></div> <!-- Clear -->
+   </footer><!-- Footer1 -->
+
+   <footer class="footer2">
+        <div class="container">
+            <p>All Rigths Reserved</p>
+        </div>
+   </footer>
+   
+   <!-- Script -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <script>
+       // Menu mobile toggle effect
+       $('nav.menu-mobile h2').click(function(){
+           $('nav.menu-mobile ul').slideToggle();
+       });
+   </script>
+    <!-- Script -->
 </body>
 </html>
