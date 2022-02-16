@@ -63,16 +63,19 @@
        <!-- Message container -->
        <div class="container">
             <h2>A Normal Person</h2>
-            <p>
+            <p id="copypasta">
                 Watashi no na wa Kira Yoshikage. Nenre san-juu-san sai. Jitaku wa Morioh-cho hokuto bu no bessou chitai ni ari, kekkon wa shiteinai.
                 Shigoto wa Kame Yu chuun den no kaishain de mainichi osuku tomo yoru hachi ji made niwa kitakusuru. Tabako wa suwanai,
                 sake wa tashinamu tedo. Yoru juu-ichi niwa toko ni tsuki, kanarazu hachi jikan wa suimin o toru you ni shiteiru.
                 Neru mae ni atatakai miruku o nomi. Nijuu bun hodo no sutorecchi de karada o hogushite kara toko ni tsukuto.
                 Hotondo asa made jukusui sai. Akanbou no you ni hirou ya sutoresu o nokosazu ni, asa me o samaserun da. 
-                Kenkou shindan demo ijou na shito iwaretai you. Watashi wa tsuneni kokoro no heon o negatte ikiteru ningen toiu koto o setsume
-                shiteiru noda yo.
+                Kenkou shindan demo ijou na shito iwaretai you. Watashi wa tsuneni kokoro no heon o negatte ikiteru ningen toiu koto o setsume shiteiru noda yo. Kachimake ni kodawattari atama o kakaeru you na toraburu toka yoru mo nemurenai toitta teki o tsukuranai... toiu no ga, watashi no shakai ni taisuru shise de ari, sore ga jibun no koufuku da toiu koto o shitteiru. Mottomo tatakatta toshitemo watashi wa dare nimo maken gane.
             </p>
         </div><!-- Message container -->
+
+        <div class="container" style="padding-top: 4%;">
+        <button class="trans"><p id="p-trans">Translate</p></button>
+        </div>
    </section><!-- Section 01 -->
 
 <!-- Section 02 -->
@@ -209,21 +212,21 @@
             </div><!-- Text -->
 
             <div class="card-single">
-                <img src="images/jojo_logo.png" alt="Jojo Logo" title="Jojo logo">
-                <h3>Greatest Deeds</h3>
-                <p>texttexttexttexttexttexttetxtxtxcetxte</p>
+                <img src="images/shigekiyo.jpg" alt="shigekiyo explosion" title="shigekiyo explosion">
+                <h3>Exploded shigekiyo</h3>
+                <p>He Deserved this, Kira was just doing the need to stay unkown and preserve his identity.</p>
             </div>
 
             <div class="card-single">
-                <img src="images/jojo_logo.png" alt="Jojo Logo" title="Jojo logo">
-                <h3>Greatest Deeds</h3>
-                <p>texttexttexttexttexttexttetxtxtxcetxte</p>
+                <img src="images/jotaro.jpg" alt="Jotaro" title="Jotaro">
+                <h3>The one damaged Jotaro the most </h3>
+                <p>Intil this time Jotara had only difficult against Dio, and Kira did more damage, especially if comparing his powers to Dio.</p>
             </div>
 
             <div class="card-single">
-                <img src="images/jojo_logo.png" alt="Jojo Logo" title="Jojo logo">
-                <h3>Greatest Deeds</h3>
-                <p>texttexttexttexttexttexttetxtxtxcetxte</p>
+                <img src="images/arrow.jpg" alt="arrow" title="arrow">
+                <h3>Took an arrow and still survived</h3>
+                <p>Without medical support, besides he still survived to it, gained a completely new and strong stand power</p>
             </div>
 
             <div class="clear"></div><!-- Clear -->
@@ -266,6 +269,23 @@
        $('nav.menu-mobile h2').click(function(){
            $('nav.menu-mobile ul').slideToggle();
        });
+       var control = 1;
+
+       function change(control){
+        if (control == 1){
+        $('.main-bg .container p#copypasta').text('My name is Yoshikage Kira. I\'m 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don\'t smoke, but I occasionally drink. I\'m in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I\'m trying to explain that I\'m a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn\'t lose to anyone.')
+        return 2
+        } else {
+        $('.main-bg .container p#copypasta').text('Watashi no na wa Kira Yoshikage. Nenre san-juu-san sai. Jitaku wa Morioh-cho hokuto bu no bessou chitai ni ari, kekkon wa shiteinai. Shigoto wa Kame Yu chuun den no kaishain de mainichi osuku tomo yoru hachi ji made niwa kitakusuru. Tabako wa suwanai, sake wa tashinamu tedo. Yoru juu-ichi niwa toko ni tsuki, kanarazu hachi jikan wa suimin o toru you ni shiteiru. Neru mae ni atatakai miruku o nomi. Nijuu bun hodo no sutorecchi de karada o hogushite kara toko ni tsukuto. Hotondo asa made jukusui sai. Akanbou no you ni hirou ya sutoresu o nokosazu ni, asa me o samaserun da. Kenkou shindan demo ijou na shito iwaretai you. Watashi wa tsuneni kokoro no heon o negatte ikiteru ningen toiu koto o setsume shiteiru noda yo. Kachimake ni kodawattari atama o kakaeru you na toraburu toka yoru mo nemurenai toitta teki o tsukuranai... toiu no ga, watashi no shakai ni taisuru shise de ari, sore ga jibun no koufuku da toiu koto o shitteiru. Mottomo tatakatta toshitemo watashi wa dare nimo maken gane.')
+        return 1
+        };
+       }
+
+       $('div.container button.trans').click(function(){
+        control = change(control);
+
+       });
+       
    </script>
     <!-- Script -->
 </body>
