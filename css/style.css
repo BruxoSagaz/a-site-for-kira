@@ -89,6 +89,11 @@ header{
     float: left;
 }
 
+.logo a{
+    color: black;
+    text-decoration: none;
+}
+
 nav.menu-desktop{
     float: right;
 }
@@ -521,6 +526,7 @@ footer.footer2{
 / *# About #* /
 */
 
+/* Section 01 */
 
 section.title-page{
     padding: 30px;
@@ -545,12 +551,64 @@ section.title-page p{
     margin-top: 15px;
 }
 
+/* Section 02 */
 
 
+section.about__history{
+    padding: 30px 0;
+}
 
+div.about__single__history img{
+    max-width: 100%;
+    float: left;
+    width: 50%;
+}
 
+div.about__single__history p{
+    float: left;
+    width: 50%;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 26px;
+}
 
+.about__single__paragraph{
+    margin-top: 15px;
+}
 
+.about__single__paragraph p{
+    margin-top: 8px;
+    padding: 0;
+    font-weight: lighter;
+}
+
+/* Section 03 */
+    /* Parallax Effect*/
+
+section.parallax{
+    padding: 30px 0;
+    width: 100%;
+    min-height: 200px;
+    background-image: url('../images/necktie.png');
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+section.parallax p{
+    color: white;
+    margin-top: 10px;
+}
+
+section.parallax h2.chamada-parallax{
+    border: 1px solid #c4a2ee;
+    padding: 5px 20px;
+    color: #c4a2ee;
+    font-size: 18px;
+    display: inline-block;
+}
 
 
 
@@ -606,6 +664,14 @@ section.title-page p{
 
     div.qualitie-list div.list p{
         margin-left: 174px;
+    }
+
+    div.about__single__history p,img{
+        width: 100%;
+    }
+
+    div.about__single__history img{
+        width: 100%;
     }
 }
 
