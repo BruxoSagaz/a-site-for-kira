@@ -1,6 +1,6 @@
 /* imports */
 @import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Gideon+Roman&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap');
 
 /* Base  */
 
@@ -34,6 +34,20 @@ body{
     width: 50%;
 }
 
+.w60{
+    width: 60%;
+    float: left;
+}
+
+.w40{
+    width: 40%;
+    float: left;
+}
+
+.w100{
+    width: 100%;
+    float: left;
+}
 
 /*
 / *# index #* /
@@ -154,8 +168,8 @@ section.main-bg > .container{
 
 section.main-bg h2{  
     color: #8b86dd;
-    font-size: 40px;
-    padding: 0 0 90px 0;
+    font-size: 66px;
+    padding: 0 0 50px 0;
     font-weight: normal;
 
 }
@@ -164,8 +178,8 @@ section.main-bg p{
     color: white;
     font-size: 20px;
     margin-top: 15px;
-    font-weight: bold;
-    text-align: left;
+    font-weight: normal;
+
 }
 
 
@@ -612,9 +626,89 @@ section.parallax h2.chamada-parallax{
 
 
 
+
+/*
+/ *# Contact #* /
+*/
+
+/* Section 01 */
+
+section.title-contact{
+    padding: 30px;
+    width: 100%;
+    min-height: 190px;
+    background-image: url('../images/wallpaper_4.png');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+section.contact{
+    padding: 30px 0;
+    min-height: 600px;
+}
+
+
+section.contact .w50{
+    padding-top: 8px;
+}
+
+.formulario h2{
+    background: #F8C9FF;
+    text-align: center;
+    color: #f7f2f8;
+    font-size: 17px;
+    font-weight: normal;
+    border-left: 5px solid #7470b8;
+    padding: 4px 0;
+}
+
+.formulario input[type=text],
+.formulario input[type=email]{
+    width: 100%;
+    height: 40px;
+    border: 1px solid #F8C9FF;
+    margin-bottom: 15px;
+    padding-left: 8px;
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 120px;
+    border: 1px solid #F8C9FF;
+    margin-bottom: 15px;
+    padding:10px;
+    resize: vertical;
+}
+
+.tags-form{
+    padding-left: 50px;
+}
+
+.tags-form h2{
+    font-weight: normal;
+
+}
+
+.tags-form p{
+    font-weight: lighter;
+}
+
+.tags-form p.tag-contact{
+    color: white;
+    background: #F8C9FF;
+    text-align: center;
+    margin-top: 6px;
+    padding: 6px 2px;
+
+}
+
 /* Responsivity */
 @media screen and (max-width: 768px) {
     .card-single{width: 100%;}
+    .w50,.w60,.w40,.w100,.w33{width: 100%;margin-bottom: 20px;}
     .box-icon-single{
         width: 100%;
     }
@@ -673,6 +767,20 @@ section.parallax h2.chamada-parallax{
     div.about__single__history img{
         width: 100%;
     }
+
+    .formulario input[type=text],
+    .formulario input[type=email]{
+        margin-bottom: 0px;
+    }
+
+    .formulario textarea{
+        margin-bottom: 0px;
+    }
+
+    .tags-form{
+        padding: 0px;
+    }
+    
 }
 
 @media screen and (max-width: 500px) {
